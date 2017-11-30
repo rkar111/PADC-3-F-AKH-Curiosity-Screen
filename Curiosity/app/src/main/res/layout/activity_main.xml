@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.arkarhein.curiosity.MainActivity"
+    android:background="@drawable/nightsky">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_curiosity"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/curiositylogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"/>
+
+            <Button
+                android:id="@+id/btn_facebook_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="@string/facebook_login"
+                android:textAllCaps="false"
+                android:textColor="@color/all_white"
+                android:textSize="18sp"
+                android:background="#cc303F9F"
+                android:drawableLeft="@drawable/ic_fb_logo"
+                android:foreground="@drawable/ripple_allwhite"/>
+
+            <Button
+                android:id="@+id/btn_google_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="@string/google_login"
+                android:textAllCaps="false"
+                android:textColor="@color/all_white"
+                android:textSize="18sp"
+                android:background="#cc3647b9"
+                android:drawableLeft="@drawable/ic_action_name"
+                android:foreground="@drawable/ripple_allwhite"/>
+
+            <Button
+                android:id="@+id/btn_twitter_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:text="@string/twitter_login"
+                android:textAllCaps="false"
+                android:textColor="@color/all_white"
+                android:textSize="18sp"
+                android:background="#cc5467e6"
+                android:drawableLeft="@drawable/ic_twitter_bird"
+                android:foreground="@drawable/ripple_allwhite"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_email_signup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/signup_email"
+                    android:textAllCaps="false"
+                    android:textColor="@color/all_white"
+                    android:textSize="16sp"
+                    android:background="#cc6d6f7c"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_envelope"
+                    android:foreground="@drawable/ripple_allwhite"/>
+
+                <Button
+                    android:id="@+id/btn_email_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="60dp"
+                    android:text="@string/signin_email"
+                    android:textAllCaps="false"
+                    android:textColor="@color/all_white"
+                    android:textSize="16sp"
+                    android:background="#cc6d6f7c"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_envelope"
+                    android:foreground="@drawable/ripple_allwhite"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_terms"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp"
+               android:text="@string/terms_conditions"
+                android:gravity="center"
+                android:textColor="@color/all_white"
+                android:foreground="@drawable/ripple_allwhite"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
